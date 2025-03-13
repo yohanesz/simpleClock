@@ -20,14 +20,19 @@ const containerAnalogico = document.querySelector('.containerAnalogico');
 const btnNext = document.querySelector(".proxPainel");
 const btnPrev = document.querySelector(".antPainel");
 
-btnNext.addEventListener("click", () => {
-    digital.classList.add("move-left");
-    analogico.classList.add("move-right");
+btnNext.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    containerDigital.style.transform = 'translateX(-100vw)';
+    containerAnalogico.style.transform = 'translateX(0)';
+    
 });
 
-btnPrev.addEventListener("click", () => {
-    digital.classList.remove("move-left");
-    analogico.classList.remove("move-right");
+btnPrev.addEventListener("click", (event) => {
+    event.preventDefault();
+    
+    containerDigital.style.transform = 'translateX(0)';
+    containerAnalogico.style.transform = 'translateX(100vw)';
 });
 
 setInterval(atualizarRelogio, 1000);

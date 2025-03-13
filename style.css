@@ -29,12 +29,13 @@ section {
 }
 
 .container {
+    gap: 20px;
     position: relative;
     min-height: 80vh;
     display: flex;
     justify-content:center;
     align-items: center;
-    /* overflow: hidden; */
+    overflow: hidden;
     min-width: 200vh;
 }
 
@@ -61,12 +62,13 @@ section {
     height: 50vh;
     border-radius: 50%;
     /* left: 100vw; */
-    transition: transform 4s ease;
+    transition: transform 3s ease;
     transform: translateX(100vw);
 }
 
 
 .containerDigital {
+    gap:20px;
     position: absolute;
     left: 0; /* Mantém na primeira tela */
     width: 100vw; /* Ocupa toda a largura visível */
@@ -75,13 +77,10 @@ section {
     align-items: center;
     justify-content: center;
     color: #bababa;
-    transition: transform 4s ease;
-    /* transform: translateX(-200vw); */
-
+    transition: transform 3s ease;
+    /* transform: translateX(-100vw); */
 }
 
-
-  
   .segundoAnal {
     position: absolute;
     top: 50%; 
@@ -132,7 +131,6 @@ section {
 .contButton {
     /* background-color: white; */
     position: fixed;
-    left: 200vh;
     width: 10vh;
     height: 100vh;
     /* display: none; */
