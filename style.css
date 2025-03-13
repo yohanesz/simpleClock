@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+header>h1 {
+    color: #bababa;
+    padding-top: 5vh;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #010101;
+    font: normal 15pt Arial;
+    /* overflow: hidden; */
+}
+
+header {
+    color: black;
+    text-align: center;
+}
+
+section {
+
+}
+
+.container {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* overflow: hidden; */
+    min-width: 200vh;
+}
+
+
+
+.horaDigital, .minutoDigital {
+    background-color: #101010;
+    height: 30vh;
+    width: 25vh;
+    align-content: center;
+    border-radius: 20px;
+}
+
+
+.hora, .minuto {
+    text-align: center;
+    font-size: 18vh;
+}
+
+.containerAnalogico {
+    position: absolute;
+    background: #101010;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
+    /* left: 100vw; */
+    transition: transform 4s ease;
+    transform: translateX(100vw);
+}
+
+
+.containerDigital {
+    position: absolute;
+    left: 0; /* Mantém na primeira tela */
+    width: 100vw; /* Ocupa toda a largura visível */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bababa;
+    transition: transform 4s ease;
+    /* transform: translateX(-200vw); */
+
+}
+
+
+  
+  .segundoAnal {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    background-color: #bababa;
+    width: 20vh;
+    height: 1vh;
+    border-radius: 20px;
+    transform-origin: 0% 50%;
+    transform: rotate(360deg); 
+    transition: transform 4s ease;
+  }
+
+  .horaAnal {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    background-color: #bababa;
+    width: 10vh;
+    height: 1vh;
+    border-radius: 20px;
+    transform-origin: 0% 50%;
+    transform: rotate(90deg); 
+    transition: transform 3s ease;
+  }
+
+  .minutoAnal {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    background-color: #bababa;
+    width: 20vh;
+    height: 1vh;
+    border-radius: 20px;
+    transform-origin: 0% 50%;
+    transform: rotate(180deg); 
+    transition: transform 10s ease;
+  } 
+  
+
+/* footer {
+    text-align: center;
+    color: white;
+    font-style: italic;
+    padding-top: 20px;
+} */
+
+.contButton {
+    /* background-color: white; */
+    position: fixed;
+    left: 200vh;
+    width: 10vh;
+    height: 100vh;
+    /* display: none; */
+
+    & .proxPainel, .antPainel {
+        background-color: rgb(175, 175, 175);
+        width: 100px;
+        height: 50px;
+        cursor: pointer;
+    }
+}
