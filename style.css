@@ -28,6 +28,11 @@ section {
 
 }
 
+.turno {
+  padding-left: 38px;
+  font-weight: bold;
+}
+
 .container {
     gap: 20px;
     position: relative;
@@ -62,7 +67,7 @@ section {
     height: 50vh;
     border-radius: 50%;
     /* left: 100vw; */
-    transition: transform 3s ease;
+    transition: transform 2.5s ease;
     transform: translateX(100vw);
 }
 
@@ -77,22 +82,10 @@ section {
     align-items: center;
     justify-content: center;
     color: #bababa;
-    transition: transform 3s ease;
+    transition: transform 2.5s ease;
     /* transform: translateX(-100vw); */
 }
 
-  .segundoAnal {
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    background-color: #bababa;
-    width: 20vh;
-    height: 1vh;
-    border-radius: 20px;
-    transform-origin: 0% 50%;
-    transform: rotate(360deg); 
-    transition: transform 4s ease;
-  }
 
   .horaAnal {
     position: absolute;
@@ -103,8 +96,8 @@ section {
     height: 1vh;
     border-radius: 20px;
     transform-origin: 0% 50%;
-    transform: rotate(90deg); 
-    transition: transform 3s ease;
+    /* transform: rotate(360deg);  */
+    /* transition: transform 3600s ease; */
   }
 
   .minutoAnal {
@@ -112,13 +105,80 @@ section {
     top: 50%; 
     left: 50%; 
     background-color: #bababa;
-    width: 20vh;
+    width: 15vh;
     height: 1vh;
     border-radius: 20px;
     transform-origin: 0% 50%;
-    transform: rotate(180deg); 
-    transition: transform 10s ease;
+    /* transform: rotate(360deg);  */
+    /* transition: transform 60000ms ease; */
   } 
+
+  .segundoAnal {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    background-color: #f87575;
+    width: 20vh;
+    height: 0.5vh;
+    border-radius: 20px;
+    transform-origin: 0% 50%;
+    /* transform: rotate(360deg);  */
+    /* transition: transform 1000ms ease; */
+  }
+
+  .contAnt, .contProx {
+    position: absolute;
+    top: 36vh;
+  }
+
+  .contAnt {
+      right: 95%;
+    }
+    
+    .contProx {
+      left: 95%;
+  }
+
+  .antPainel, .proxPainel {
+    position: fixed;
+    color: #bababa;
+    background-color: transparent;
+    border: none;
+    font: normal 40pt Impact;
+    cursor: pointer;
+
+    & :hover {
+      color: white;
+      font-weight: bolder;
+    }
+  }
+
+  .numHorizontal, .numVertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & p {
+      font: normal 20pt Arial;
+      color: #bababa;
+      margin: 20px;
+    }
+  }
+
+  .numHorizontal {
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+  }
+
+  .numVertical {
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-between;
+  }
+ 
   
 
 /* footer {
@@ -127,18 +187,3 @@ section {
     font-style: italic;
     padding-top: 20px;
 } */
-
-.contButton {
-    /* background-color: white; */
-    position: fixed;
-    width: 10vh;
-    height: 100vh;
-    /* display: none; */
-
-    & .proxPainel, .antPainel {
-        background-color: rgb(175, 175, 175);
-        width: 100px;
-        height: 50px;
-        cursor: pointer;
-    }
-}
