@@ -16,7 +16,7 @@ body {
     min-height: 100vh;
     background-color: #010101;
     font: normal 15pt Arial;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 header {
@@ -24,9 +24,6 @@ header {
     text-align: center;
 }
 
-section {
-
-}
 
 .turno {
   padding-left: 38px;
@@ -67,7 +64,7 @@ section {
     height: 50vh;
     border-radius: 50%;
     /* left: 100vw; */
-    transition: transform 2.5s ease;
+    transition: transform 1.5s ease;
     transform: translateX(100vw);
 }
 
@@ -82,7 +79,7 @@ section {
     align-items: center;
     justify-content: center;
     color: #bababa;
-    transition: transform 2.5s ease;
+    transition: transform 1.5s ease;
     /* transform: translateX(-100vw); */
 }
 
@@ -136,7 +133,7 @@ section {
     }
     
     .contProx {
-      left: 95%;
+      left: 92%;
   }
 
   .antPainel, .proxPainel {
@@ -162,6 +159,8 @@ section {
       font: normal 20pt Arial;
       color: #bababa;
       margin: 20px;
+      font-weight: bold;
+      
     }
   }
 
@@ -181,9 +180,9 @@ section {
  
   
 
-/* footer {
+  footer {
     text-align: center;
-    color: white;
+    color: #bababa88;
     font-style: italic;
-    padding-top: 20px;
-} */
+    font-size: 18px;
+  }
