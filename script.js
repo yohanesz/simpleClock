@@ -49,6 +49,9 @@ btnNext.addEventListener("click", (event) => {
 
     containerDigital.style.transform = 'translateX(-100vw)';
     containerAnalogico.style.transform = 'translateX(0)';
+    btnNext.style.display = 'none';
+    btnPrev.style.display = 'block';
+    
     
 });
 
@@ -57,6 +60,9 @@ btnPrev.addEventListener("click", (event) => {
     
     containerDigital.style.transform = 'translateX(0)';
     containerAnalogico.style.transform = 'translateX(100vw)';
+    btnPrev.style.display = 'none';
+    btnNext.style.display = 'block';
+
 });
 
 setInterval(atualizarRelogio, 1000);

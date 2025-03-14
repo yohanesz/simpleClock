@@ -126,6 +126,7 @@ header {
   .contAnt, .contProx {
     position: absolute;
     top: 36vh;
+    background-color: #d6d6d6;
   }
 
   .contAnt {
@@ -138,16 +139,23 @@ header {
 
   .antPainel, .proxPainel {
     position: fixed;
-    color: #bababa;
-    background-color: transparent;
+    color: #010101;
+    background-color: #222222;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
     border: none;
     font: normal 40pt Impact;
     cursor: pointer;
+    transition: background-color 0.5s ease;
 
-    & :hover {
-      color: white;
-      font-weight: bolder;
+    &:hover {
+      background-color: #bababa;
     }
+  }
+
+  .antPainel {
+    display: none;
   }
 
   .numHorizontal, .numVertical {
